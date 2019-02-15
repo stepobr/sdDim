@@ -1,4 +1,7 @@
 # sdDim
+
+Author: Alexander Kaminskiy
+
 Monitoring tool which displays source driver current vs reel position
 
 Running startSDmon without parameters gives you a list of SDManages running at the moment
