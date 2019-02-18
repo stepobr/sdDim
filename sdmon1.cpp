@@ -209,7 +209,7 @@ const string st_STATUS(".STATUS");
 const string st_PREFIX("HCAL.SD");
 
 int main(int argc, char ** argv) {
-  DimClient::setDnsNode("hcalmon");
+  // DimClient::setDnsNode("hcalmon");
   //  DimClient::setDnsPort("2505");
   
   DimBrowser br;
@@ -236,7 +236,7 @@ int main(int argc, char ** argv) {
   //  std::vector<std::pair<double, double> > xy;
   //  std::vector<std::pair<double, double> > xy_ref;
   //  FILE *pipe = popen("/nfshome0/kaminsky/gnuplot/bin/gnuplot -persist", "w");
-  FILE *pipe = popen("/nfshome0/kaminsky/gnuplot/bin/gnuplot ", "w");
+  FILE *pipe = popen("/usr/local/bin/gnuplot ", "w");
   fprintf(pipe,"set term X11 size 1200,400\n");
   fprintf(pipe,"set xrange [0:12000]\n");
   fprintf(pipe,"set yrange [0:100]\n");
