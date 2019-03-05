@@ -6,4 +6,4 @@ export DIM_DNS_NODE=hcalmon
 export DIN_DNS_PORT=2505
 
 echo starting sdMonitor
-/nfshome0/kaminsky/HCAL/sdDim_devel/sdmon1 $1 $2
+/nfshome0/kaminsky/HCAL/sdDim_release/sdmon1

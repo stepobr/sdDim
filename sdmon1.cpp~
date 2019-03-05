@@ -26,7 +26,6 @@ typedef struct sddim_s {
   int iamp;
   int ivolt;
   int ii2[2];
-  int sdid[2];
   char controller[64];
   char tubeinfo[64];
   char lastcommand[64];
@@ -238,7 +237,7 @@ void  SDDimService::print_sddim( int newline) {
 }
 
 
-volatile sddim_s SDDimService::prev={0,0,0,-9,-999,-1,-1,0,0,0,0,0,"","","",""};
+volatile sddim_s SDDimService::prev={0,0,0,-9,-999,-1,-1,0,0,0,"","","",""};
 const string st_STATUS(".STATUS");
 const string st_PREFIX("HCAL.SD");
 
